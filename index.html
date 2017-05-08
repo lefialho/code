@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding:  0;
+		}
+		body{
+			margin: 30px;
+			font-family: 'arial', sans-serif;
+		}
+		header::before, header::after{
+			content: '';
+			display: table;
+			clear: both;
+		}
+		header h1{
+			float: left;
+		}
+		header nav{
+			float: right;
+		}
+		header ul li{
+			display: inline-block;
+		}
+		header ul li a{
+			padding: 5px 10px;
+			color: #000;
+		}
+		h1, h2, p, ul{
+			margin-bottom: 20px;
+		}
+		ul{
+			margin-left: 40px;
+		}
+	</style>
+
 </head>
+
 <body>
+
 	<header>
 		<h1>Meu primeiro teste no git</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Estudar UX/UI</a></li>
+				<li><a href="#">Estudar Design</a></li>
+				<li><a href="#">Estudar Front-end</a></li>
+				<li><a href="#">Estudar Back-end</a></li>
+			</ul>
+		</nav>
 	</header>
+
 	<section class="main">
 		<h2>Tudo que pretendo estudar eu vou colocar nesse diretório</h2>
 		<p><b>Por exemlo:</b><br>Sites, componentes, pré-processadores e gerenciadores de tarefas como:</p>
@@ -28,8 +76,10 @@
 			<li>git checkout</li>
 		</ul>
 	</section>
+
 	<footer>
 		<p>Praticar, praticar e praticar, essa é a minha premissa daqui pra frente...</p>
 	</footer>
+
 </body>
 </html>
